@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block content %}
+  
+
+    <form action = "http://localhost:5000/result" method = "POST">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Name</span>
+      <input type="text" class="form-control" placeholder="Name" name="name">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Age</span>
+      <input type="text" class="form-control" placeholder="Age" name="age">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Gender</span>
+      <input type="text" class="form-control" placeholder="gender" name="gender">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Height</span>
+      <input type="text" class="form-control" placeholder="Height" name="height">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Weight</span>
+      <input type="text" class="form-control" placeholder="Weight" name="weight">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Exfre</span>
+      <input type="text" class="form-control" placeholder="exfre" name="exfre">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Cushemo</span>
+      <input type="text" class="form-control" placeholder="cushemo" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Cushema</span>
+      <input type="text" class="form-control" placeholder="cushema" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Custri</span>
+      <input type="text" class="form-control" placeholder="custri" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Cushdl</span>
+      <input type="text" class="form-control" placeholder="cushdl" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Cusglu</span>
+      <input type="text" class="form-control" placeholder="cusglu" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Cusa1c</span>
+      <input type="text" class="form-control" placeholder="cusa1c" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Cusuric</span>
+      <input type="text" class="form-control" placeholder="cusuric" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+
+
+
+    
+
+    <div class="d-grid gap-2">
+    <input type="submit"><a href="{{ url_for('result') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Confirm</a>
+    <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg" tabindex="1" role="button">Main</a>
+  </div>
+  
+
+
+  </form>
+{% endblock %}
+  

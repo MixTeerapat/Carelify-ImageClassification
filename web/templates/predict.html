@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><title>test</title></head>
+    <body>
+        <input id="image-selector" type="file">
+        <button id="predict-button">Predict</button>
+        <img id="selected-image" src=""/>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            let base64Image;
+            $("#image-selector").change(function(){
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    let dataURL = reader.result;
+                    $('#seleted-image').attr("src",dataURL);
+                    base64Image = dataURL.replace("data:image/png;base64,","");
+                    console.log(base64Image);
+                }
+                //reader.readAsDataURL($("#image-selector")[0].files[0]);
+                
+            });
+        </script>
+    </body>
+</html>
