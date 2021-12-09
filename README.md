@@ -8,5 +8,7 @@ The Xception.ipynb is just only the template for training Xception pre-trained m
 
 After receiving the .h5 model from the code, we can connect and utilize it (for predicting images) locally with the Flask (Micro Web Framework) by running main4.py in the 'web' directory.
 
+To run the code, you must change the path that belongs to your dataset path or other path in directory on your computer. It would probably not exactly like the path provided in the code. Moreover, preprocess_input and model import code might also be different depends on the seleted model.
 
+Hope you enjoy !!
 
